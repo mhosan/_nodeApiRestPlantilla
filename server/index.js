@@ -17,7 +17,7 @@ app.use(cors({}));                                  //que el servidor escuche en
 app.use('/api',require('./routes/rutas.js'));     //el primer parametro es la ruta
                                                     //por default. Se agrega a la ruta '/'
 
-//start el server express, escuchando en el puerto que le asigna el servidor local. En su defecto usa el puerto seteado (3000)
+//Arrancar el server express, escuchando en el puerto que le asigna el servidor local. En su defecto usa el puerto seteado (3000)
 app.listen(app.get('port'), () => {
     console.log("Server escuchando en el puerto", app.get('port'));
     
